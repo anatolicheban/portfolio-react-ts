@@ -1,0 +1,99 @@
+$light-blue: #9BB7EF
+$dark-blue: #2E4674
+$half-white: rgba(255, 255, 255, .8)
+$light-grey: #A7A7A7
+body.dark
+  #root
+    background-image: url(../assets/img/main-dark_bg.png)
+  .wrapper
+    background-image: url(../assets/img/second-dark_bg.png)
+  .header
+    &__name, &__link
+      color: $light-blue
+    &__link.active-link
+      color: $dark-blue
+      background-color: $half-white
+    &__switch
+      color: $half-white
+  .sidebar
+    &__name
+      color: $light-blue
+    &__job-position
+      color: #fff
+    &__info
+      color: $light-grey
+  .about
+    &__title, .qualification__title
+      color: $light-blue
+    &__info
+      color: $half-white
+    &__numbers-item, .qualification__courses-item
+      border-color: $half-white
+      &:hover
+        background-color: rgba($light-grey, .4)
+    &__numbers-item h4
+      color: $light-grey
+    &__numbers-item span
+      color: $half-white
+    &__numbers-item img, .qualification__subtitle-box img
+      background-color: $half-white
+      padding: 0.25rem
+      border-radius: .25rem
+  .qualification
+    &__subtitle
+      color: $half-white
+    &__courses-name, &__courses-author
+      color: $half-white
+    &__courses-period
+      color: #fff
+  .skills
+    &__title
+      color: $light-blue
+    &__info
+      color: $half-white
+    &__item-icon
+      background-color: $half-white
+      padding: 0.25rem
+      border-radius: .25rem
+    &__item-title, &__item-value
+      color: $half-white
+  .projects
+    &__title
+      color: $light-blue
+    &__subtitle, &__text
+      color: $half-white
+    &__main-title, &__other-title
+      color: $half-white
+    &__text a
+      color: $light-blue
+    &__items::-webkit-scrollbar,
+    &__items::-webkit-scrollbar-thumb
+      background-color: $half-white
+    &__item-box
+      color: $half-white
+      img
+        background-color: $half-white
+        padding: 0.25rem
+        border-radius: .25rem
+    &__item-btn
+      color: $half-white
+  .summary
+    &__title
+      color: $light-blue
+    &__box a
+      color: $half-white
+  .notfound
+    &__title
+      color: $light-blue
+    &__subtitle
+      color: $light-grey
+    &__text
+      color: $half-white
+  .modal
+    background-color: #333
+    p
+      color: $half-white
+  .close-modal
+    background-color: $half-white
+    padding: 0.25rem
+    border-radius: .25rem

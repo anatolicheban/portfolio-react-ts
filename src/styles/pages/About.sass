@@ -1,0 +1,112 @@
+.about
+  padding-left: 2rem
+  padding-right: 2rem
+  &__title
+    margin-top: .5rem
+    font-weight: 600
+    font-size: 2rem
+    line-height: 3rem
+    color: #5671A6
+  &__info
+    max-width: 800px
+    font-weight: 500
+    font-size: 1rem
+    line-height: 1.5rem
+    color: #616161
+  &__numbers
+    list-style: none
+    display: flex
+    margin: 2rem 0
+  &__numbers-item
+    border: 1px solid rgba(255, 255, 255, .3)
+    padding: .5rem
+    border-radius: .5rem
+    max-width: 10rem
+    transition: all .5s
+    & + &
+      margin-left: 1.5rem
+    &:hover
+      background-color: rgba(255, 255, 255, .3)
+
+  &__numbers-item img
+    width: 1rem
+    display: block
+    margin-bottom: 2rem
+  &__numbers-item span
+    max-width: 5rem
+    font-weight: 500
+    font-size: .9rem
+    line-height: 1.4rem
+    color: #383838
+    transition: .5s
+  &__numbers-item h4
+    transition: .5s
+    color: #383838
+    font-size: 2rem
+
+.qualification
+  margin-top: 2rem
+  &__title
+    font-weight: 600
+    font-size: 2rem
+    line-height: 3rem
+    color: #5671A6
+  &__subtitle-box
+    display: flex
+    align-items: center
+    margin-top: 1rem
+  &__subtitle
+    font-weight: 600
+    color: #383838
+    margin-left: 0.25rem
+  &__courses
+    display: flex
+    list-style: none
+  &__courses-item
+    padding: .5rem 1rem
+    border-radius: .5rem
+    transition: all .5s
+    border: 2px solid rgba(255, 255, 255, .3)
+    & + &
+      margin-left: 1.5rem
+    &:hover
+      background-color: rgba(255, 255, 255, .3)
+
+  &__courses-link
+    min-height: 100%
+    display: flex
+    flex-direction: column
+    text-decoration: none
+  &__courses-name
+    font-weight: 600
+    font-size: .8rem
+    line-height: 1rem
+    color: #383838
+    max-width: 6rem
+    flex: 1 0 auto
+  &__courses-author
+    margin-top: .5rem
+    font-weight: 500
+    font-size: .8rem
+    line-height: 1.25rem
+    color: #000
+    flex: 0 0 auto
+  &__courses-period
+    margin-top: 0.25rem
+    flex: 0 0 auto
+    font-weight: 400
+    font-size: .75rem
+    line-height: 1rem
+    color: #616161
+    padding-left: 22px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 15px
+      height: 15px
+      background-image: url(../../assets/img/calendar.svg)
+      background-repeat: no-repeat
+      left: 0
+      top: 50%
+      translate: 0 -50%

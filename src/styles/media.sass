@@ -1,0 +1,44 @@
+@media(max-width: 1200px)
+  .projects
+    &__box
+      display: block
+@media(max-width: 950px)
+  .sidebar
+    border-right: none
+    border-bottom: 1px solid rgba(#383838, .3)
+    &__avatar
+      margin-top: 1rem
+      &__contact-btn
+        margin-bottom: 1rem
+@media(max-width: 870px)
+  .wrapper
+    &__info
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr
+  .header
+    flex-direction: column
+    align-items: center
+    &__box
+      display: flex
+      align-items: center
+      flex-direction: column
+    &__links
+      margin: 1rem 0
+      a
+        margin: 0
+  .skills
+    &__info
+      text-align: center
+  .summary
+    &__box
+      margin: 2rem 0
+@media(max-width: 570px)
+  html
+    font-size: 14px
+  .summary
+    &__box
+      flex-direction: column
+      align-items: center
+@media(max-width: 480px)
+  .projects
+    padding: 0 1rem

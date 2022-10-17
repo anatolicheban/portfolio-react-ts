@@ -1,0 +1,41 @@
+.projects
+  padding: 0 3rem
+  &__title
+    text-align: center
+    margin-top: 2.5rem
+    font-weight: 600
+    font-size: 2rem
+    line-height: 3rem
+    color: #5671A6
+  &__subtitle, &__text
+    text-align: center
+    font-size: .75rem
+    color: #616161
+    margin-top: 0.5rem
+  &__box
+    margin-top: 1rem
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 1fr
+    gap: 2rem
+  &__main-title, &__other-title
+    text-align: center
+    color: rgba(#272727, .8)
+  &__list
+    list-style: none
+  &__text
+    font-size: 1rem
+    font-weight: 500
+    margin-bottom: 1rem
+    a
+      color: #004E96
+  &__items.main, &__items.other
+    overflow: auto
+    max-height: 21rem
+  &__items::-webkit-scrollbar,
+  &__items::-webkit-scrollbar-thumb
+    background-color: rgba(#fff, .5)
+    width: 26px
+    border-radius: 13px
+    background-clip: padding-box
+    border: 10px solid transparent

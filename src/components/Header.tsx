@@ -1,6 +1,6 @@
 import { headerLinks } from "../assets/data/headerLinks";
 import Switch from "react-switch";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import HeaderLink from "./HeaderLink";
 
 type HeaderProps = {
@@ -10,11 +10,25 @@ type HeaderProps = {
 
 const Header = ({ onChangeTheme, theme }: HeaderProps) => {
   const [currPath, setCurrPath] = useState(window.location.pathname);
+  const links = useRef<HTMLUListElement>(null);
+  const linksBtn = useRef<HTMLButtonElement>(null);
+
+  const toggleListHandler = () => {
+    links.current?.classList.toggle("open");
+    linksBtn.current?.classList.toggle("active");
+  };
   return (
     <header className="header">
-      <h1 className="header__name">Cheban Anatoli</h1>
+      <h1 className="header__name">
+        Cheban Anatoli{" "}
+        <button ref={linksBtn} onClick={toggleListHandler} className="header__links-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </h1>
       <div className="header__box">
-        <ul className="header__links">
+        <ul ref={links} className="header__links">
           {headerLinks.map(({ id, path, name }) => (
             <HeaderLink
               onClick={() => {
